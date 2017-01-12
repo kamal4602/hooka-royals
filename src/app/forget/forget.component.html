@@ -1,33 +1,38 @@
-    <div class="col m6 offset-m3 s10 offset-s1" style="position: relative;">
-      <div class="card  col s12 forgetpassword">
+  <div class="card_panel_center">
+   <div class="col s12 " style="position: relative;">
+      <div class="card z-depth-4  grey-text text-darken-4 forgetpassword">
         <div class="card-content">
-          <!-- <div class="login_border_left_side blue darken-4"></div> -->
-          <div class="col s12 blue-text center-align text-darken-4" style="font-size: 30px;"><strong>Forget Password
-          </strong>
-         <!--  <a class="btn-floating btn-large waves-effect waves-light blue darken-4 right close_forget_button"><i class="material-icons">supervisor_account</i></a> --></div>
-          <div class=" col s12 flow-text center-align text-flow" style="font-size: 15px;">
-            You can request your Password by entering your Email Address
-          </div> 
+          <div class="login_border_left_side blue darken-4"></div>
+         <span class="card-title blue-text text-darken-4"><strong>Forget Password</strong></span>
           <!-- form start -->
-          <form >
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="email" type="email" class="validate">
-                <label for="email" class=" grey-text text-darken-4">Email</label>
+          <form class="forgetpassword-form">
+            <div class="row margin">
+              <div class="input-field col s12 margin">  
+                <p class="text-flow grey-text ">You can request your Password by entering your Email Address</p>
               </div>
-              <div class="col s12 center-align btn_login"><br>
-                  <a class="waves-effect waves-light btn blue text-darken-4">
-                      <i class="material-icons right">fast_forward</i>Submit
-                  </a>
+            </div>
+            <div class="row margin">
+              <div class="input-field col s12">
+               <i class="material-icons prefix">account_circle</i>
+                <input class="validate" id="email" type="email">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+            </div>
+             <div class="row">
+              <div class=" col s12 m12 l12">
+                <p class="margin medium-small col s12"><a class="waves-effect col s12  waves-light btn-large blue darken-4">SUBMIT</a></p>
               </div>
             </div>
           </form>
-          <div class="col s12">
-            <div class="col s6 blue-text"><a  class="login_panel">Login</a></div>
-            <div class="col s6 right blue-text"><a class="align-right right register_panel">Register</a></div>
-               <br><br>
-          </div>
+            <div class="row margin">
+              <div class="col s12">
+                <div class="col s6 blue-text"><a class="login_panel">Login</a></div>
+                <div class="col s6 right blue-text">
+                    <a class="align-right right register_panel">Register</a>
+                </div>
+              </div>
+            </div>    
         </div>
       </div>
     </div>
+  </div>

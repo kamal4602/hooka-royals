@@ -1,49 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/materialize-css/dist/css/materialize.css";
+*{
+    box-sizing: border-box !important;
+}
 
 
 
+/**********************...... Login & sign up form Css......*******************/
+ a {	cursor: pointer;}
 
-/**********************...... 
-				Login & sign up form Css
-							******************.......... */
 .background_images {
 	background: url("assets/img/back2.png")  repeat;
+	position: absolute;
+	width: 100%;
+	
 	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding-bottom: 10%;
+	box-sizing: content-box !important;
 }
-/* .background_images {
-	background: rgb(66,165,245);
-		height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding-bottom: 10%;
-} */
-
-			/* form elements */
-.login_signup_button{	position: relative;right: -60px;	}
+.margin{margin: 0 !important;}
+.btn-large:hover{transform: translateY(-3px);box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);  }
+.login_signup_button{	position: relative;right: -50px;	}
 .login_border_left_side{width: 4px; height: 45px;position: absolute;left: 0px;}
 .login_box {   
 	 animation: fade_up ease-in-out 1s 1;
-	 border-radius: 10px;
+	 border-radius: 2px;
 }
 .signup_box{	
 	animation: fade_up ease-in-out 1s 1;
-	border-radius: 10px;
+	border-radius: 2px;
 	display: none;
-}
-.forget_password, .login_panel, .register_panel{
-	cursor: pointer;
 }
 .forgetpassword{
 	animation: fade_up ease-in-out 1s 1;
-	border-radius: 10px;
+	border-radius: 2px;
 	display: none;
 }
 @-webkit-keyframes move {
@@ -51,22 +40,69 @@
     to {  background-position:0% 187%  }
 }
 @keyframes fade_up {
-   0% { 
-   		opacity: 0; transform: scale(.5) 
-   	 }
+   0% { opacity: 0; transform: scale(.5) }
    50%{ opacity: 1;	transform: scale(1)}
 }
 
-/****************........
-		Responsive Elements 
-					******************/
+/* ........Responsive Elements.......*/
 @media only screen and (min-width:300px) and (max-width: 640px) {
-   .h2_in_small_screen{
-   	font-size: 35px;
-   }
-}
-@media only screen and (min-width:400px) and (max-width: 768px) {
-	.background_images{
-		height: 140% !important;
+   .h2_in_small_screen{ font-size: 35px; }
+	.login_signup_button{right: 0px !important;	}
+	.row_in_media{
+		top: 5% !important;
 	}
 }
+@media only screen and (min-width:400px) and (max-width: 768px) {
+	.background_images{	height: 140% !important;}
+	.row_in_media{
+		top: 5% !important;
+	}
+} /* ......../Responsive Elements.......*/
+
+/* Only For Login Form SignUp form Responsive card width  margin */
+.card_panel_center{padding:0% 35%;}
+@media only screen and (max-width: 1200px) {
+.card_panel_center{padding:0% 33%;}
+}
+@media only screen and (max-width: 1100px) {
+.card_panel_center{padding:0% 31%;}
+}
+@media only screen and (max-width: 1000px) {
+.card_panel_center{padding:0% 30%;}
+}
+@media only screen and (max-width: 950px) {
+.card_panel_center{padding:0% 28%;}
+}
+@media only screen and (max-width: 900px) {
+.card_panel_center{padding:0% 26%;}
+}
+@media only screen and (max-width: 800px) {
+.card_panel_center{padding:0% 24%;}
+}
+@media only screen and (max-width: 700px) {
+.card_panel_center{padding:0% 20%;}
+}
+@media only screen and (max-width: 600px) {
+.card_panel_center{padding:0% 15%;}
+}
+@media only screen and (max-width: 500px) {
+.card_panel_center{padding:0% 10%;}
+}
+@media only screen and (max-width: 450px) {
+.card_panel_center{padding:0% 8%;}
+}
+@media only screen and (max-width: 400px) {
+.card_panel_center{padding:0% 2%;}
+}
+@media only screen and (max-width: 350px) {
+.card_panel_center{padding:0% 0%;}
+}
+@media only screen and (max-width: 300px) {
+.card_panel_center{padding:0% 0%;}
+}  /* /Endz here Only For Login Form SignUp form Responsive card width  margin */
+
+
+
+/***********************......Endz of Login & sign up form Css......*******************/
+
+
