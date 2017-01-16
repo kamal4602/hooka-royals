@@ -10,7 +10,7 @@
  a {	cursor: pointer;}
 
 .background_images {
-	background: url("assets/img/back2.png");
+	background: url("assets/img/back2.jpg");
 	background-attachment:fixed;
 }
 .main{
